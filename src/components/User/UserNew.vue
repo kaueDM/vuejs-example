@@ -1,5 +1,5 @@
 <template>
-<div class="column">
+<div class="column animated fadeIn">
   <h2 class="title has-text-centered">New User</h2>
   <form class="container is-fluid">
     <div class="field">

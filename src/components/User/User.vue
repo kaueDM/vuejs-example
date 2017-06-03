@@ -4,11 +4,11 @@
   <hr>
   <div class="columns">
     <app-user-new />
-    <div class="column">
+    <div class="column animated fadeIn">
       <h2 class="title has-text-centered">Users List</h2>
       <h6 class="subtitle has-text-centered">Click To Remove</h6>
       <ul>
-        <li v-for="item in userRef" class="user-li" @click="removeUser(item['.key'])">
+        <li v-for="item in userRef" class="user-li animated fadeIn" @click="removeUser(item['.key'])">
           {{ item.name }} <small>({{ item.email }})</small>
         </li>
       </ul>
@@ -35,6 +35,10 @@ export default {
   methods: {
     removeUser(key) {
       this.$firebaseRefs.userRef.child(key).remove()
+        .then(() => {
+          const removeToast = this.$toasted.show('User Removed From Database');
+          removeToast.goAway(1500);
+        })
     }
   }
 }

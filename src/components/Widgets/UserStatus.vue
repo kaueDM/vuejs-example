@@ -1,6 +1,6 @@
 <template>
 <nav class="level" style="margin-top: 10px">
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered animated fadeIn">
     <div>
       <p class="heading">Registered Users</p>
       <p class="title">
@@ -8,13 +8,13 @@
       </p>
     </div>
   </div>
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered animated fadeIn">
     <div>
       <p class="heading">Daily Views</p>
       <p class="title">224K</p>
     </div>
   </div>
-  <div class="level-item has-text-centered">
+  <div class="level-item has-text-centered animated fadeIn">
     <div>
       <p class="heading">Monthly Views</p>
       <p class="title"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></p>

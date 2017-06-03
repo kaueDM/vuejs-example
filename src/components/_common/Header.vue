@@ -2,7 +2,7 @@
 <div>
   <nav class="nav has-shadow">
     <div class="nav-left">
-      <span class="nav-item">
+      <span class="nav-item animated rubberBand">
         <img src="../../assets/logo.png" alt="VueJS Logo">
         VueJS Example
       </span>
